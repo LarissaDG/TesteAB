@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/B Test: Image Description</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>A/B Test: Image Description vs Prompt</h1>
+    </header>
+
+    <main>
+        <section id="test-section">
+            <h2>Compare the Descriptions</h2>
+            <div class="image-container">
+                <img src="placeholder.jpg" alt="Generated Image" id="test-image">
+            </div>
+            
+            <div class="description-container">
+                <div class="description" id="description-a">
+                    <h3>Version A: Description</h3>
+                    <p>This is a placeholder description of the image that outlines its visual elements and details.</p>
+                </div>
+                <div class="description" id="description-b">
+                    <h3>Version B: Prompt</h3>
+                    <p>This is the original prompt used to generate the image, capturing the creative intent.</p>
+                </div>
+            </div>
+
+            <div class="interaction-container">
+                <label for="highlight-a">Highlight important parts in Version A:</label>
+                <textarea id="highlight-a" placeholder="Copy and edit text or highlight terms here"></textarea>
+
+                <label for="highlight-b">Highlight important parts in Version B:</label>
+                <textarea id="highlight-b" placeholder="Copy and edit text or highlight terms here"></textarea>
+            </div>
+
+            <div class="feedback-container">
+                <h3>Which description do you prefer?</h3>
+                <button id="vote-a">Version A</button>
+                <button id="vote-b">Version B</button>
+                <button id="vote-tie">Both equally</button>
+            </div>
+
+            <div class="summary">
+                <h3>Feedback Summary</h3>
+                <p id="summary-feedback">Your input will help us improve our descriptions!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 A/B Test Platform</p>
+    </footer>
+</body>
+</html>
